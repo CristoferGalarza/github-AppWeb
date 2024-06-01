@@ -1,0 +1,328 @@
+/*añadido de las fuentes para usarlo a lo largo del proyecto*/
+/*Usamos font face para cargar fuentes personalizadas en nuestra pagian web*/
+@font-face {
+    font-family: 'interRegular';
+    src: url(/Tarea2/fuentes/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'interSemi';
+    src: url(/Tarea2/fuentes/Inter-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'romanesco';
+    src: url(/Tarea2/fuentes/Romanesco-Regular.ttf);
+}
+
+/*seccion encargada de la apariencia de la parte superior*/
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Contenedor de la cabecera de los elementos*/
+header{
+    background-color: #A3A656;
+    display: flex;
+    align-items: center;
+    padding: 12px 0px 11px 0px;
+    font-size: 16px;
+    font-family: 'interRegular';
+}
+
+/*Lista que contiene los elementos de navegacion de la parte superior: ul*/
+.listasuperior{
+    margin: 0px;
+    padding: 0px 0px 0px 70px;/*pading aplicado a la izquierda*/
+    
+}
+
+/*Forma en la que se van a mostrar los elementos de la lista*/
+.elementoslista{
+    display: inline-block;
+    background-color: #A3A656;
+    padding: 0px 40px 0px 0px;/*Espacio entre los textos de la parte superior*/
+    
+}
+.elementoslista:hover{
+    color: #ffff00;
+    cursor: pointer;
+}
+
+/*control de las catacteristicas de los botones superiores*/
+.botonsup{
+    background-color: #A3A656;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px 0px 10px ;
+    border: 0px;
+    cursor: pointer;
+}
+
+.botonsup:hover{
+    color: #ffff00;
+}
+
+.botonsup img{
+    padding-right: 10px;
+    font-size: 1.3rem;
+}
+.botonsup span{
+    padding-right: 10px;
+    
+}
+
+/*Seccion que contiene los botones que usa el usuario*/
+.menuUser{
+    width: 30%;
+    display: flex;
+    justify-content: right;
+    
+}
+
+/*Seccion que contiene los elementos de la lista*/
+.menuSup{
+    width: 70%;
+}
+
+/*====================================Seccion articulo====================================*/
+/*Parte para incorporar la imagen principal*/
+.imagenPrincipal{
+    background-image: url('/Tarea2/images/main.png');/*colocamos la imagen de fondo*/
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.textoPrincipal{
+    float: inline-start;
+    padding: 150px 0px 0px 220px
+}
+
+.textoPrincipal p{
+    margin: 0px;
+    font-family: 'romanesco';
+    font-size: 96px;
+    font-weight: normal;
+}
+
+.textoPrincipal h2{
+    font-family: 'interSemi';
+    font-weight: 100;
+    font-size: 30px;
+}
+
+/*=============================Seccion para agendar cita========================================*/
+.agendarCita{
+    display: flex;
+    justify-content: center;
+    background-color: #f2f6f6;
+    margin: 0px;
+    font-family: 'interRegular';
+    font-size: 16px;
+    height: 100px;
+    box-sizing: border-box;
+    padding-top: 30px;
+}
+
+.agendarCita span{
+    padding: 20px;
+    border: none;
+    
+}
+
+.agendarCita input{
+    padding: 10px 0px 10px 0px;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+}
+
+.agendarCita input::placeholder{
+    color: #9E9A9A;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+#cita{
+    width: 250px;
+}
+
+/*==========================Seccion de servicios=================================*/
+
+/*seccion general de productos*/
+.productos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+.productos h2{
+    text-align: center;
+    font-family: 'interSemi';
+    font-size: 32px;
+    color: white;
+    background-color: #A3A656;
+    border-radius: 15px 15px 0px 0px;
+    padding: 20px 20px;
+    margin: 0px;
+}
+
+/*Se aplica a ambos lados de las cartas*/
+.productos div{
+    padding: 0px 67px;
+}
+
+#masajePies p{
+    font-size: 14px;
+    font-family: 'interRegular';  
+}
+
+#masajeRelajante p{
+    font-size: 14px;
+    font-family: 'interRegular';  
+}
+
+#masajeBambu p{
+    font-size: 14px;
+    font-family: 'interRegular';  
+}
+
+.productos span{
+    font-family: 'interRegular';
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.productos button{
+    background-color: #a3a656;
+    border: none;
+    border-radius: 35px;
+    color: #fff;
+    float: right;
+    font-weight: bold;
+    height: 45px;
+    padding: 10px;
+    width: 140px;
+}
+
+.productos button:hover{
+    background-color: #384001;
+}
+
+/*================================Seccion de los socios================================*/
+
+.membresias{
+    height: 770px;
+    box-sizing: border-box;
+    padding-top: 30px;
+    background-color: #F2F6F6;
+    text-align: center;
+    width: auto;
+}
+
+.membresias h1{
+    font-family: 'interRegular';
+    font-size: 32px;
+    padding-bottom: 30px;
+}
+
+.socios{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;/*espacio simetrico entre los elementos*/
+}
+
+.socios img{
+    padding: 25% 0 25% 0;
+}
+
+.circulo{
+    border: 10px solid #384001;
+    border-radius: 50%;
+    height: 233px;
+    width: 233px;
+    background-color: white;
+}
+
+.socios h2{
+    font-family: 'interSemi';
+    font-size: 32px;
+    margin: 0px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+
+.socios button{
+    border: none;
+    background-color: #A3A656;
+    color: #fff;
+    padding: 15px;
+    border-radius: 35px;
+    width: 255px;
+    font-weight: bold;
+}
+
+.socios button:hover{
+    background-color: #384001;
+}
+
+.socios ul{
+    text-align: left;
+    font-family: 'interRegular';
+    font-size: 14px;
+    margin: 0px;
+    padding: 20px 20px 20px 50px;
+}
+
+/*================================Seccion de redes sociales====================================*/
+
+footer{
+    display: flex;
+    background-color: #384001;
+    align-items: center;
+    font-family: 'interRegular';
+    font-size: 16px;
+    height: 97px;
+    box-sizing: border-box;
+}
+
+.barraInferior{
+    width: 85%;
+}
+
+
+.elementoslista2 a{
+    color: #A3A656;
+    display: inline;
+    text-decoration: none;
+    padding: 0px 25px 0px 0px;
+}
+
+.listainferior{
+    margin: 0px;
+    padding: 0px 0px 0px 70px;/*pading aplicado a la izquierda*/
+    justify-content: space-between;
+    list-style-type: none;
+    display: flex;
+}
+
+.redes{
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.redes:last-child{
+    padding-right: 25px;
+}
+
+.elementoslista2 a:hover{
+    color: #ffff00;
+}
+
